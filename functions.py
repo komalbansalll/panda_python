@@ -1,7 +1,7 @@
 # function 
 def abc():
     print ("hello welcome to python")
-name = "shree"    
+name = "rahul"    
 if name == "komal":
  print("you are girl")
 else:  
@@ -90,3 +90,80 @@ print(len(a)) # only use in string
 
 b = [1,2,3,4,5]
 print(max(b)) # only use in list
+
+# lambda function
+# lambda function is a small anonymous function
+# lambda function can take any number of arguments, but can only have one expression.
+ 
+
+def add(a,b):
+  print(a+b)
+  return a+b
+add(10,20)
+
+Square = lambda a,b: a*b
+print(Square(6,7))
+
+a=lambda a,b: a+b
+print(a(10,5))
+
+even = lambda a: a%2==0
+print(even(4))
+
+# docstring 
+def add( a,b):
+  """ this function is useed to add two numbers."""""
+  return a+b
+print(add(20,30))
+print(add.__doc__)
+
+
+def substract (b,n):
+  """this function is used to substract"""
+  return b-n
+print(substract(80,34))
+print(substract.__doc__)
+
+
+def student (name,age,course):
+    """this function display student information"""
+    print("name:", name)
+    print("age:", age)
+    print("course:", course)
+student("komal",20,"python")
+student("shree", 30,"java")
+# student("python")
+print(student.__doc__)
+
+
+# recussion function
+
+# def hello():
+#   print("hello")
+#   hello()
+# hello()  
+
+# def hello():
+#   print('hello')
+#   hello()
+# hello()  
+
+
+def hello(n):
+  if n==0:
+    return
+  print('hello')
+  hello(n-1)
+hello(5)  
+
+
+
+
+
+
+
+
+
+
+
+
