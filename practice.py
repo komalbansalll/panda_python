@@ -391,30 +391,55 @@ num = int(input("Enter a number: "))
 result = cube(num)
 print("Cube:", result)
 # 12. Default Argument Create a function power(base, exp=2) using a default argument.
-def power(base, exp=2):
+def power(base, exp=2): 
   return base**exp
 print("default argument",power(3))
 print("default argument",power(2,3))
+
 # 13. Positional Arguments Create a function student(name, age) and call it using positional arguments.
+def student(name, age):
+    print("Name:", name)
+    print("Age:", age)
 
 # 14. Keyword Arguments Create a function student(name, age) and call it using keyword arguments:
+def student(name, age):
+    print("Name:", name)
+    print("Age:", age)
+
+student(name="John", age=25)    
+
+# 15. *args Practice Create a function total(*numbers) that accepts any number of numbers and returns their total
+def total(*numbers):
+    return sum(numbers)
+print("args",total(10,20,30,40))
+
+# 16. **kwargs Practice Create a function student_info(**details) that accepts student information
+def student_info(**details):
+    print("Name:", details["name"])
+    print("Age:", details["age"])
+    print("Course:", details["course"])
+
+student_info(name="John", age=25, course="Python")
+
+# 17. Return Multiple Values Create a function calculate(a, b) that returns:
+# Addition 
+# Subtraction 
+# Multiplication 
+# Store the returned values in three variables.
 
 
 
 
 
 
+# 18. Local Variable Create a function show() with a local variable x = 100. Print x inside the function and try to print it outside. Observe the error.
 
-
-
-
-
-
-
-
-
-
-
+# 20. Mini Calculator Using Functions Create separate functions for:
+# Addition 
+# Subtraction 
+# Multiplication 
+# Division 
+# Take two numbers from the user and display the results using these functions.
 
 
 
