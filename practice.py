@@ -443,12 +443,27 @@ student_info(name="John", age=25, course="Python")
 
 
 
+# lambda function 
+# what is lambda function
+# lambda function is a small anonymous function
+# lambda function can take any number of arguments, but can only have one expression.
 
+# 2  Lambda Syntax
+#  ÷lambda arguments: expression
+a = lambda a,b : a+b
+print("lambda function",add (10,20))
 
+# Convert Celsius to Fahrenheit
 
+# 4: Create a lambda function to add 10 to a number.
+add = lambda x: x+10
+print(add(100))
 
-
-
+# 5. Sort Students by Marks
+students = [("John", 85), ("Alice", 92), ("Bob", 78), ("Eve", 95)]
+# Sort the students based on their marks using a lambda function as the key.
+sorted_students = sorted(students, key=lambda student: student[1])
+print("Sorted Students by Marks:", sorted_students) 
 
 
 
