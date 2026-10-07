@@ -343,9 +343,6 @@ def div(a,b):
 print("division :",div(8,16))
 
 # odd even
-
-
- 
 def check (a):
     if a % 2 == 0:
         print("even")
@@ -432,7 +429,13 @@ student_info(name="John", age=25, course="Python")
 
 
 
+
 # 18. Local Variable Create a function show() with a local variable x = 100. Print x inside the function and try to print it outside. Observe the error.
+def show():
+    x = 100
+    print("Inside function, x =", x)
+
+show() 
 
 # 20. Mini Calculator Using Functions Create separate functions for:
 # Addition 
@@ -443,6 +446,7 @@ student_info(name="John", age=25, course="Python")
 
 
 
+# practice 05 oct 2026
 # lambda function 
 # what is lambda function
 # lambda function is a small anonymous function
@@ -454,19 +458,46 @@ a = lambda a,b : a+b
 print("lambda function",add (10,20))
 
 # Convert Celsius to Fahrenheit
+celsius_to_fahrenheit = lambda c: (c * 9/5) + 32
+print(celsius_to_fahrenheit(0))
 
 # 4: Create a lambda function to add 10 to a number.
 add = lambda x: x+10
-print(add(100))
+print(add(10))
 
 # 5. Sort Students by Marks
-students = [("John", 85), ("Alice", 92), ("Bob", 78), ("Eve", 95)]
-# Sort the students based on their marks using a lambda function as the key.
-sorted_students = sorted(students, key=lambda student: student[1])
-print("Sorted Students by Marks:", sorted_students) 
+students = [("komal", 85), ("manvi", 92), ("koko", 78), ("yuvi", 90)]
+students.sort(key=lambda x: x[1])
+print("students marks by sorting ",students)
 
 
+# Find the Longest Name
+def longest_name(names):
+    return max(names, key=lambda x: len(x))
+print(longest_name(["komalllll","manvi","koko","yuvi"]))
+# print(longest_name["komallll","man"])
 
+# 7.What is a Docstring?
+def multi (x,y):
+    """thi function is docstring example"""
+    return x*y
+print(multi(2,8))
+print(multi.__doc__)
+
+
+# A docstring is a special type of string that is used to document a module, class, method, or function in Python. 
+# It is enclosed in triple quotes (""" """) and is placed immediately after the definition of the function, class, or module. 
+# Docstrings provide a convenient way to associate documentation with Python code and can be accessed using the `__doc__` attribute.
+
+# 8. How to see the Docstring?
+# You can see the docstring of a function, class, or module by using the `help()` 
+# function or by accessing the `__doc__` attribute.
+
+# 9.What is Recursion?
+# Recursion is a programming technique where a function calls itself in order to solve a problem.
+
+# 10. Recursion with a Base Condition
+# Recursion with a base condition is a technique where a recursive function includes a condition that stops the recursion when a certain condition is met.
 
 
 
