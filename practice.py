@@ -479,10 +479,10 @@ print(longest_name(["komalllll","manvi","koko","yuvi"]))
 
 # 7.What is a Docstring?
 def multi (x,y):
-    """thi function is docstring example"""
+    """this function is docstring example"""
     return x*y
 print(multi(2,8))
-print(multi.__doc__)
+print(multi.__doc__) ,# this is how we print the doc string of a function
 
 
 # A docstring is a special type of string that is used to document a module, class, method, or function in Python. 
@@ -498,16 +498,3 @@ print(multi.__doc__)
 
 # 10. Recursion with a Base Condition
 # Recursion with a base condition is a technique where a recursive function includes a condition that stops the recursion when a certain condition is met.
-
-
-
-
-
-
-
-
-
-
-
-
-
