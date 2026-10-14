@@ -35,7 +35,7 @@ print(np.linspace(0,10,5))
 # 10-0 = 10
 # 5-1 = 4 
 # 4 dvide 10 = 2.5
-print(np.eye(3,4)) #(4)
+print("eyeee----",np.eye(3,4)) #(4)
 print(np.random.randint(100))
 
 
@@ -46,10 +46,8 @@ print(np.max(marks))
 print("mean",np.mean(marks)) 
 print("median:",np.median(marks))
 print(np.std(marks)) 
-# standard division formulla
+# standard division
 
-
- 
 
 
 
