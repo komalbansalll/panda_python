@@ -141,12 +141,4 @@ class cal :
     def add(a,b):
         print("staticmethod",a+b)
 
-cal.add(10,10)        
-
-
-
-
-
-
-
-
+cal.add(10,10)

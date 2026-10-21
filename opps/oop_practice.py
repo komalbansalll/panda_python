@@ -151,7 +151,6 @@ print(len(cart))
 
  
 # check code
-
 # class Product:
 #     def __init__(self, product_name, quantity):
 #         self.product_name = product_name
@@ -162,13 +161,78 @@ print(len(cart))
 # print(p1.product_name)
 # print(p1.quantity)
 
+# Q1. Instance Method Create a Student class with an instance method display() that prints "Welcome to PIT".
+class student:
+    def display(self):
+        print("welcome to the PIT")
+s1 = student()        
+s1.display()
 
+# Q2. Instance Method with Object Data 
+# Create an Employee class with a name variable. 
+# Create two objects with different names and display 
+# their names using an instance method.
+
+class employee:
+    def display(self):
+        print("Instance Method with object ->",self.name)
+e1 = employee()
+e1.name ="komal"  
+e1.display()      
+
+# Q3. Class Method Create a Student class with 
+# a class variable school = "PIT". 
+# Write a class method show_school() 
+# to print the school name.
+
+class student :
+    school = "PIT"
+    @classmethod
+    def display(cls):
+        print(cls.school)
+student.display()        
+
+ #  Q4. Class Method to Change Data Create a College class
+ #  with a class variable name = "ABC College". 
+ # Write a class method change_name() to change 
+ # the college name to "PIT College".    
+
+class college:
+    cllg_name = "ABC college"
+    @classmethod
     
+    def change_name(cls,new_cllg_name):
+        cls.cllg_name=new_cllg_name
+
+college.change_name("xyz")
+print(college.cllg_name)        
+
+# Q5. Static Method Create a Calculator 
+# class with a static method 
+# multiply(a, b) that prints 
+# the multiplication of two numbers.
+
+class cal:
+    @staticmethod
+    def multiplication(a,b):
+        print("static multiplication",a*b)
+cal.multiplication(2,2)        
+
+# Q6. Static Method Create a Number class 
+# with a static method is_even(n) that 
+# checks whether a number is even or odd.
+class number:
+
+  @staticmethod
+  def is_even(n):
+    if n % 2 == 0:
+      print("even")
+    else:
+      print("odd")
+n1 = number()
+user_input = int(input("Enter a number: "))
+n1.is_even(user_input)
 
 
 
-
-
-
-
-
+ 
