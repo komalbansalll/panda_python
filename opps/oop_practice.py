@@ -23,7 +23,7 @@ s1 = student() #obj 1
 print(s1.name,
       s1.age)    
 
-s2 = student () #obj 2
+s2 = student () #obj 
 s2.name = "priya"
 s2.age = 22
 print(s2.name,
