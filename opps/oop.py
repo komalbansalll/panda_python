@@ -83,10 +83,65 @@ class student:
 s1 = student("komal",22,"delhi")
 s1.display()
   
+# Instance Method works with the data of a particular object
+class student:
+    def display(self): #instance self refer to the current object
+        print("hello")
+s1 = student()   
+s1.display()
 
 
+class student:
+    def display(self):
+        print(self.name)
+s1 = student()
+s1.name = "komal"
+s1.display() 
 
+# Class Method works with class level dta uses @classmethod
 
+class student:
+    school  = "PIT" #difine class var
+
+    @classmethod # coverts the method into class method
+    def display(cls): #cls define class
+        print(cls.school) # print class var school
+
+student.display() 
+
+# changing class level data
+
+class student :
+    school='pit'
+    @classmethod
+    
+    def change_school(cls,new_school):
+        cls.school=new_school
+
+student.change_school('dps') 
+print(student.school)
+
+# decorator.  method
+
+def my_decorator(func):
+    def wrapper():
+        print('before function')
+        func()
+        print('after function')
+    return wrapper
+
+@my_decorator
+def hello():
+    print('b')
+hello()
+
+# static method @staticmethod 
+class cal :
+    @staticmethod
+    def add(a,b):
+        print("staticmethod",a+b)
+
+cal.add(10,10)        
 
 
 
