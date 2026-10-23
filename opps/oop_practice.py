@@ -161,7 +161,9 @@ print(len(cart))
 # print(p1.product_name)
 # print(p1.quantity)
 
-# Q1. Instance Method Create a Student class with an instance method display() that prints "Welcome to PIT".
+# 21 0ct 2026
+# Q1. Instance Method Create a Student class with 
+# an instance method display() that prints "Welcome to PIT".
 class student:
     def display(self):
         print("welcome to the PIT")
@@ -177,8 +179,11 @@ class employee:
     def display(self):
         print("Instance Method with object ->",self.name)
 e1 = employee()
-e1.name ="komal"  
+e1.name ="komal" 
 e1.display()      
+e2=employee() 
+e2.name='shiwani'
+e2.display()
 
 # Q3. Class Method Create a Student class with 
 # a class variable school = "PIT". 
@@ -201,26 +206,27 @@ class college:
     cllg_name = "ABC college"
     @classmethod
     
-    def change_name(cls,new_cllg_name):
+    def change_name(cls,new_cllg_name): 
         cls.cllg_name=new_cllg_name
 
 college.change_name("xyz")
-print(college.cllg_name)        
+print("updated cllg name ->", college.cllg_name)        
 
 # Q5. Static Method Create a Calculator 
 # class with a static method 
 # multiply(a, b) that prints 
 # the multiplication of two numbers.
 
-class cal:
+class calcluator:
     @staticmethod
     def multiplication(a,b):
         print("static multiplication",a*b)
-cal.multiplication(2,2)        
+calcluator.multiplication(2,2)        
 
 # Q6. Static Method Create a Number class 
 # with a static method is_even(n) that 
-# checks whether a number is even or odd.
+# checks whether a number is even 
+
 class number:
 
   @staticmethod
@@ -233,6 +239,9 @@ n1 = number()
 user_input = int(input("Enter a number: "))
 n1.is_even(user_input)
 
-
+# Q7. Identify the Method Identify whether 
+# the following is an instance method, 
+# class method, or static method.
+ 
 
  
