@@ -23,7 +23,6 @@ b = 10
 print ("division operator :",a / b)
 
 # mod operator
-
 a = 10 
 b = 10
 print ("mod operator :",a % b)
@@ -85,9 +84,6 @@ c = b
 # print(c)
 print ("c is b : ",c is b)
 print ("c is a " , c is a )
-
-
-
 
 x = ["apple", "banana"]
 y = ["apple", "banana"]

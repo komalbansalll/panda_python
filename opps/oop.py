@@ -142,3 +142,121 @@ class cal :
         print("staticmethod",a+b)
 
 cal.add(10,10)
+
+# pre-define method
+# __init__method
+class student:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def __str__(self):
+        return f'student name : {self.name}'
+    
+       
+
+s1=student('komal',24)   
+print(s1.name,s1.age) 
+print(s1)
+
+
+# __del__method
+class office:
+    def __del__(self):
+    
+        print (f'object {self.name} is being finalized')
+
+s1=office() 
+s1.name='mansi'
+del s1  
+s2=office()  
+s2.name='shiwani'
+del s2   
+
+# __len__method
+
+class classroom:
+    def __init__(self,students):
+        self.students=students
+    def __len__(self):
+        return len(self.students)    
+c1 = classroom(["komal","dev","shiwani"])
+print(len(c1))
+        
+
+#  __add__()
+class numbers:
+    def __init__(self,value):
+        self.value = value
+    def __add__(self,other):
+        return self.value + other.value
+
+
+n1 = numbers(1)
+n2 = numbers(20)
+print(n1+n2)
+
+# __eq__()
+class student:
+    def __init__(self,marks):
+        self.marks = marks
+    def __eq__(self,other):
+        return self.marks == other.marks
+s1 = student(90)
+s2 = student(90)    
+s3 = student(75)
+print(s1==s2)
+print(s1==s3)
+
+# __rep__()
+
+class student:
+    def __repr__(self):
+        return "student object"
+s = student()
+print(repr(s))    
+
+
+# __getitem__
+class student :
+    def __init__(self,name,marks ):
+        self.name = name
+        self.marks =marks
+    def __getitem__(self, index):
+        return self.marks[index]
+s1 =student("komal",[10,20,90])    
+print(s1[0])
+
+# __bool__()
+
+# __lt__() less then method
+class student :
+    def __init__ (self,age):
+        self.age =age
+    def __le__(self,other):
+        return self.age <= other.age
+    
+s1 = student(4)
+s2 = student(3)
+print(s1<=s2)      
+
+
+# __contains__ return true false
+class student :
+    def __init__(self,subjects):
+        self.subjects =subjects
+    def __contains__(self, subject):  
+        return subject in self.subjects
+s1 =    student (["python","ai","ds"])
+print("python" in s1)
+
+
+    # __call__()
+class student :
+    def __call__(self,name):
+        print("hello",name)
+s1 = student()
+s1("kk")        
+
+# __iter__()
+
+# __next__()

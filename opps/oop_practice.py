@@ -6,8 +6,8 @@ class Student:
 print(Student.name)
 print(Student.age)
 
-#  2. Create a Car class with brand and color attributes. Create one object and display the details.
-
+#  2. Create a Car class with brand and color attributes. 
+# Create one object and display the details.
 class car:
     brand = "BMW"
     color = "black"
@@ -52,8 +52,6 @@ print (t1.T_Name,
        t1.T_subject)
 
 # Create an Employee class with a constructor that accepts name and salary.
-
-
 class employee:
     def __init__(self, name, salary):
         self.name = name
