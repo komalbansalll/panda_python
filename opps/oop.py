@@ -260,3 +260,54 @@ s1("kk")
 # __iter__()
 
 # __next__()
+
+
+# Encapsulation Binding data and methods together data protection
+
+class student :
+    def __init__(self,name,marks):
+        self.name = name 
+        self.__marks = marks
+    def show(self):
+        print("name",self.name)
+        print("marks",self.__marks)
+s1 = student("komal" ,90)
+s1.show()
+
+
+
+
+# inheritance
+class parent :
+    def show (self):
+        print("this is parent class")
+class child (parent):
+    def display (self)     :
+
+        print("this is child class")
+obj = child() 
+obj.show()
+obj.display()      
+
+# 1. The Parent Class (Base Class)
+class Car:
+    def drive(self):
+        print("Driving on four wheels!")
+
+# 2. The Child Class (Derived Class) - It inherits from Car
+class ElectricCar(Car):
+    def charge(self):
+        print("Charging the battery...")
+
+# --- Using the Classes ---
+
+# Create a regular car
+my_car = Car()
+my_car.drive()      # Output: Driving on four wheels!
+
+# Create an electric car
+tesla = ElectricCar()
+tesla.drive()       # Output: Driving on four wheels! (Inherited from Parent)
+tesla.charge()      # Output: Charging the battery... (Child's own special feature)
+
+
